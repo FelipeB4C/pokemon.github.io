@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/index.css">
+  <title>Pokémon</title>
+  <link rel = "shortcut icon" type = "imagem/x-icon" href = "assets/pokeball.png"/>
+</head>
+<body>
+  
+  <section>
+    <div class="login">
+      <img src="assets/logo-pokemon.png" alt="">
+      <form action="" method="dialog">
+        <input id="login" type="text" placeholder="Login" required>
+        <input id="senha" type="password" placeholder="Senha" required>
+        <!--<input type="checkbox">-->
+        <button type="submit" href="#modalLogin">ENTRAR</button>
+        <a href="" onclick="link1()">Esqueceu a senha?</a>
+        <a href="" onclick="link2()">Criar conta</a>
+      </form>
+    </div>
+  </section>
+
+  <audio id="soundLogin" src="sounds/login.mp3" hidden></audio>
+  <audio id="soundSuccess" src="sounds/loginSucess.mp3" hidden></audio>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="js/effects.js"></script>
+</body>
+</html>

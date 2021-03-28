@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background-color: #252525;
+}
+
+section {
+  display: grid;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-content: center
+}
+
+@media(max-width: 576px) {
+
+  body {
+    background-image: url('../assets/img-escura.png');
+  }
+  
+  .login {
+    width: 499px;
+    height: 840px;
+    background-color: white;
+    border-radius: 25px;
+  }
+
+  .login img {
+    display: flex;
+    width: 331px;
+    height: 120px;
+    margin: 0 auto;
+    margin-top: 61px;
+    /*margin-bottom: 37px; default */ 
+    margin-bottom: 61px;
+  }
+
+  .login input {
+    display: block;
+    width: 331px;
+    height: 95px;
+    margin: 0 auto;
+    margin-top: 25px;
+    font-size: 32px;
+    font-weight: 300;
+    text-align: center;
+    border: 2px solid #000000;
+    border-radius: 20px;
+  }
+
+  .login button {
+    display: block;
+    width: 331px;
+    height: 76px;
+    margin: 0 auto;
+    margin-top: 32px;
+    margin-bottom: 16px;
+    color: white;
+    font-size: 32px;
+    font-weight: 700;
+    background-color: #E01212;
+    border-radius: 15px;
+    cursor: pointer;
+  }
+  
+  a {
+    display: block;
+    margin-top: 25px;
+    font-size: 32px;
+    font-weight: 400;
+    color: #227CCE;
+    text-align: center;
+  }
+}
