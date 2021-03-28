@@ -13,7 +13,7 @@ $(".login button").click(function(){
 
 function loginSucess() {
 
-  if(inptlogin.value === 'Red' && inptsenha.value === 'charizard'){
+  if(inptlogin.value === 'red' && inptsenha.value === 'charizard'){
     success.pause();
     success.currentTime = 0;
     success.play();
@@ -23,7 +23,7 @@ function loginSucess() {
       alert("Login com sucesso! Bem-vindo de volta Red")
     }
 
-  } else {
+  } else if (inptlogin.value !== 'red' && inptsenha.value !== 'charizard'){
     alert("Saia daqui equipe rocket!")
   }
   

@@ -8,70 +8,114 @@ body {
   background-color: #252525;
 }
 
+.container {
+  width: 100%;
+  max-width: 1262px;
+  margin: 0 auto;
+}
+
 section {
   display: grid;
-  width: 100vw;
   height: 100vh;
-  justify-content: center;
+  width: 100vw;
+  grid-template-columns: 2fr 1fr;
   align-content: center;
 }
 
-@media(max-width: 420px) {
+.banner {
+  width: 100%;
+  height: 840px;
+  background-color: rgb(52, 71, 33);
+  border-radius: 20px 0 0 20px;
+}
+
+.banner img {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px 0 0 20px;
+}
+
+.login {
+  width: 100%;
+  height: 840px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 0 20px 20px 0;
+}
+
+
+/* MOBILE */
+@media (max-width: 1260px){
 
   body {
     background-image: url('../assets/img-escura.png');
+    background-position: center;
   }
-  
+
+  .container {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  section {
+    display: grid;
+    height: 100vh;
+    width: 100vw;
+    grid-template-columns: 1fr;
+    align-content: center;
+  }
+
+  .banner {
+    display: none;
+  }
+
   .login {
-    width: 90vw;
-    height: 90vh;
-    background-color: white;
-    border-radius: 25px;
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
   }
 
   .login img {
     display: flex;
-    width: 70vw;
-    margin: 0 auto;
-    margin-top: 37px;
-    /*margin-bottom: 37px; default */ 
-    margin-bottom: 37px;
+    width: 75%;
+    max-width: 331px;
+    margin: 10% auto;
   }
 
-  .login input {
-    display: block;
-    width: 70vw;
-    height: 20vw;
-    margin: 0 auto;
-    margin-top: 25px;
-    font-size: 32px;
-    font-weight: 300;
+  form input {
+    display: flex;
+    width: 75%;
+    height: 70px;
+    margin: 8% auto;
     text-align: center;
-    border: 2px solid #000000;
     border-radius: 20px;
+    background-color: whitesmoke;
   }
 
-  .login button {
-    display: block;
-    width: 70vw;
-    height: 76px;
-    margin: 0 auto;
-    margin-top: 32px;
-    margin-bottom: 16px;
-    color: white;
-    font-size: 32px;
-    font-weight: 700;
-    background-color: #E01212;
-    border-radius: 15px;
-    cursor: pointer;
+  input:hover {
+    box-shadow: 0 0 7px #227CCE;
   }
-  
+
+  form button {
+    display: flex;
+    width: 75%;
+    height: 50px;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    color: white;
+    border-radius: 15px;
+    background-color: #E01212;
+  }
+
   a {
     display: block;
-    margin-top: 25px;
-    font-size: 24px;
-    font-weight: 400;
-    color: #227CCE;
     text-align: center;
+    margin: 20px auto;
+    color: #227CCE;
   }
+
 }
